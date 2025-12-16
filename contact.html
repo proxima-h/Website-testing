@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | DeMiGo Technologies</title>
+    <meta
+      name="description"
+      content="Contact DeMiGo for web and mobile development, data analysis, product development, and consultancy."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html">
+          <img src="ipo.png" alt="DeMiGo logo" class="brand-logo" />
+          <span>DeMiGo Technologies</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle navigation" id="navToggle">☰</button>
+        <nav>
+          <ul id="navList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <a class="btn-outline" href="contact.html">Talk to us</a>
+          <a class="btn" href="services.html">View services</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="section-inner">
+          <span class="breadcrumb">Home / Contact</span>
+          <h1 class="title">Let’s map out your next release.</h1>
+          <p class="subtitle">
+            Share your context—where you are, what you’re building, and what success looks like.
+            We’ll respond with a clear, pragmatic plan.
+          </p>
+        </div>
+      </section>
+
+      <section aria-labelledby="contact-title">
+        <div class="section-inner contact-grid">
+          <div class="contact-card" data-reveal>
+            <h2 id="contact-title" class="title">Project inquiry</h2>
+            <p class="subtitle">
+              The more specific you can be, the better we can propose realistic timelines and
+              architectures.
+            </p>
+            <form id="contact-form">
+              <div>
+                <label for="contact-name">Full name</label>
+                <input id="contact-name" name="name" type="text" required />
+              </div>
+              <div>
+                <label for="contact-email">Email</label>
+                <input id="contact-email" name="email" type="email" required />
+              </div>
+              <div>
+                <label for="contact-type">What do you need?</label>
+                <select id="contact-type" name="type" required>
+                  <option value="">Select</option>
+                  <option>Web application</option>
+                  <option>Mobile application</option>
+                  <option>Data analysis</option>
+                  <option>Product development</option>
+                  <option>Consultancy</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div>
+                <label for="contact-budget">Rough budget (optional)</label>
+                <input id="contact-budget" name="budget" type="text" />
+              </div>
+              <div>
+                <label for="contact-message">Project brief</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  placeholder="Goals, timelines, constraints..."
+                  required
+                ></textarea>
+              </div>
+              <button class="btn" type="submit">Send message</button>
+            </form>
+          </div>
+
+          <div class="contact-card" data-reveal>
+            <h2 class="title">Other ways to reach us</h2>
+            <div class="contact-line">📧 hello@demigo.tech</div>
+            <div class="contact-line">📞 +1 (415) 555-2048</div>
+            <div class="contact-line">📍 Chennai · Remote-first</div>
+
+            <div class="gallery" style="margin-top:16px;">
+              <img
+                src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt="City skyline representing office location"
+              />
+              <video autoplay muted loop playsinline>
+                <source
+                  src="https://videos.pexels.com/video-files/6690565/6690565-uhd_2560_1440_25fps.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <img
+                src="https://images.pexels.com/photos/5668859/pexels-photo-5668859.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt="People in a meeting room"
+              />
+            </div>
+
+            <div class="map" aria-label="Office map" style="margin-top:16px;">
+              <iframe
+                title="DeMiGo map"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                loading="lazy"
+                allowfullscreen
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.938408387783!2d80.246!3d13.019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAxJzA4LjQiTiA4MMKwMTQnNDYuMSJF!5e0!3m2!1sen!2sus!4v0000000000"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <div class="brand">
+            <img src="ipo.png" alt="DeMiGo logo" class="brand-logo" />
+            <span>DeMiGo</span>
+          </div>
+          <p class="subtitle">
+            Web &amp; mobile engineering, data analysis, product development, and consultancy
+            for teams that demand reliability and speed.
+          </p>
+        </div>
+        <div>
+          <h4>Navigate</h4>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="services.html">Services</a></p>
+          <p><a href="products.html">Products</a></p>
+          <p><a href="careers.html">Careers</a></p>
+          <p><a href="contact.html">Contact</a></p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p class="subtitle">hello@demigo.tech</p>
+          <p class="subtitle">+1 (415) 555-2048</p>
+          <p class="subtitle">Chennai · Remote-first</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 DeMiGo Technologies. All rights reserved.</span>
+        <span>Built for accessibility · SEO ready · Secure by default</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+

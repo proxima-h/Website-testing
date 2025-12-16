@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers | DeMiGo Technologies</title>
+    <meta
+      name="description"
+      content="Explore open roles at DeMiGo and apply to join a team that values clarity, craft, and measurable impact."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html">
+          <img src="ipo.png" alt="DeMiGo logo" class="brand-logo" />
+          <span>DeMiGo Technologies</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle navigation" id="navToggle">☰</button>
+        <nav>
+          <ul id="navList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <a class="btn-outline" href="contact.html">Talk to us</a>
+          <a class="btn" href="services.html">View services</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="section-inner">
+          <span class="breadcrumb">Home / Careers</span>
+          <h1 class="title">Build products that actually ship.</h1>
+          <p class="subtitle">
+            At DeMiGo, you work with experienced engineers, clear roadmaps, and customers who care
+            about quality. We keep meetings lean and delivery focused.
+          </p>
+          <div class="stat-bar">
+            <div class="stat-chip">Remote-first</div>
+            <div class="stat-chip">Flexible but accountable</div>
+            <div class="stat-chip">No tolerance for ego</div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="open-roles-title">
+        <div class="section-inner">
+          <span class="tag">Open roles</span>
+          <h2 id="open-roles-title" class="title">Current opportunities</h2>
+          <div class="job-list">
+            <div class="job" data-reveal>
+              <span class="pill">Engineering</span>
+              <h4>Senior Full-Stack Engineer</h4>
+              <p class="subtitle">
+                Ship production systems in TypeScript/React/Node with a focus on quality and
+                observability.
+              </p>
+            </div>
+            <div class="job" data-reveal>
+              <span class="pill">Mobile</span>
+              <h4>Mobile Engineer</h4>
+              <p class="subtitle">
+                Own features across iOS and Android using Flutter or React Native, from UX to store.
+              </p>
+            </div>
+            <div class="job" data-reveal>
+              <span class="pill">Data</span>
+              <h4>Data Analyst</h4>
+              <p class="subtitle">
+                Turn messy data into narratives executives can act on—SQL, dashboards, experiments.
+              </p>
+            </div>
+            <div class="job" data-reveal>
+              <span class="pill">Product</span>
+              <h4>Product Manager</h4>
+              <p class="subtitle">
+                Align discovery, scope, and delivery with clear measures of success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="life-title">
+        <div class="section-inner">
+          <span class="tag">Life at DeMiGo</span>
+          <h2 id="life-title" class="title">A team built on trust and craft</h2>
+          <div class="gallery">
+            <img
+              src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              alt="Team in a remote standup call"
+            />
+            <video autoplay muted loop playsinline>
+              <source
+                src="https://videos.pexels.com/video-files/3861446/3861446-uhd_2560_1440_25fps.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <img
+              src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              alt="Developers pair programming"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="apply-title">
+        <div class="section-inner grid-two">
+          <div class="panel" data-reveal>
+            <span class="tag">Apply</span>
+            <h2 id="apply-title" class="title">Tell us what you want to build next</h2>
+            <p class="subtitle">
+              We care more about how you think than the frameworks you’ve memorized. Share links to
+              work you’re proud of—repos, case studies, demos.
+            </p>
+          </div>
+          <div class="panel" data-reveal>
+            <form id="career-form">
+              <div>
+                <label for="applicant-name">Full name</label>
+                <input id="applicant-name" name="name" type="text" required />
+              </div>
+              <div>
+                <label for="applicant-email">Email</label>
+                <input id="applicant-email" name="email" type="email" required />
+              </div>
+              <div>
+                <label for="applicant-role">Role</label>
+                <select id="applicant-role" name="role" required>
+                  <option value="">Select a role</option>
+                  <option>Senior Full-Stack Engineer</option>
+                  <option>Mobile Engineer</option>
+                  <option>Data Analyst</option>
+                  <option>Product Manager</option>
+                  <option>Other (tell us below)</option>
+                </select>
+              </div>
+              <div>
+                <label for="applicant-links">Links (portfolio, GitHub, LinkedIn)</label>
+                <textarea id="applicant-links" name="links" required></textarea>
+              </div>
+              <div>
+                <label for="applicant-message">Why DeMiGo?</label>
+                <textarea id="applicant-message" name="message" required></textarea>
+              </div>
+              <button class="btn" type="submit">Submit application</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <div class="brand">
+            <img src="ipo.png" alt="DeMiGo logo" class="brand-logo" />
+            <span>DeMiGo</span>
+          </div>
+          <p class="subtitle">
+            Web &amp; mobile engineering, data analysis, product development, and consultancy
+            for teams that demand reliability and speed.
+          </p>
+        </div>
+        <div>
+          <h4>Navigate</h4>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="services.html">Services</a></p>
+          <p><a href="products.html">Products</a></p>
+          <p><a href="careers.html">Careers</a></p>
+          <p><a href="contact.html">Contact</a></p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p class="subtitle">hello@demigo.tech</p>
+          <p class="subtitle">+1 (415) 555-2048</p>
+          <p class="subtitle">Chennai · Remote-first</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 DeMiGo Technologies. All rights reserved.</span>
+        <span>Built for accessibility · SEO ready · Secure by default</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
