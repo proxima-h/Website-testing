@@ -74,12 +74,12 @@
                 <label for="contact-type">What do you need?</label>
                 <select id="contact-type" name="type" required>
                   <option value="">Select</option>
-                  <option>Web application</option>
-                  <option>Mobile application</option>
-                  <option>Data analysis</option>
-                  <option>Product development</option>
-                  <option>Consultancy</option>
-                  <option>Other</option>
+                  <option value="web">Web application</option>
+                  <option value="mobile">Mobile application</option>
+                  <option value="data">Data analysis</option>
+                  <option value="product">Product development</option>
+                  <option value="consultancy">Consultancy</option>
+                  <option value="other">Other</option>
                 </select>
               </div>
               <div>
@@ -110,7 +110,7 @@
                 src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1600"
                 alt="City skyline representing office location"
               />
-              <video autoplay muted loop playsinline>
+              <video autoplay muted loop playsinline aria-label="Office environment video">
                 <source
                   src="https://videos.pexels.com/video-files/6690565/6690565-uhd_2560_1440_25fps.mp4"
                   type="video/mp4"
